@@ -35,9 +35,7 @@ Take command of the space program: manage electric charge, execute precise orbit
 ### 🌌 Authentic Physics & Orbital Mechanics
 
 **N-Body Gravity & Keplerian Orbits:** Accurate orbital state propagation, patched conics, and a custom real-time trajectory line renderer.
-**Tsiolkovsky Rocket Equation:** Grounded in fundamental aerospace mathematics for ma
-
-s, fuel consumption, and delta-v constraints.
+**Tsiolkovsky Rocket Equation:** Grounded in fundamental aerospace mathematics for mass, fuel consumption, and delta-v constraints.
 **Custom Time-Warp Engine:** Safely accelerate time up to thousands of times speed to skip long orbital transit phases without breaking physics calculations.
 
 
