@@ -110,7 +110,7 @@ Space 3D Skybox Generator by wwwtyro: Used to generate the background space envi
 
 NASA Resources:
 NASA Blue Marble Earth Texture: Used as the texture for our 3D Earth Model, available at: https://science.nasa.gov/earth/earth-observatory/collections/blue-marble/
-50-Foot C-Band Radar Dish at Kennedy Space Center (NASA ID: KSC-06pd0031): Used as a visual asset, sourced from Nasa Image and Video Library
+50-Foot C-Band Radar Dish at Kennedy Space Center (NASA ID: KSC-06pd0031): Used as a visual asset, sourced from Nasa Image and Video Library, available at: https://images.nasa.gov/details/KSC-06pd0031
 Roman Space Telescope Illustration: Used as a visual asset, available at: https://assets.science.nasa.gov/dynamicimage/assets/science/missions/rst/spacecraft-illustrations/Roman_Space_Telescope_Animation2_Still.jpg
 70 meter dish (NASA 3D Resources): Used as a 3D asset in our interactive scene. Model courtesy of NASA/JPL-Caltech, available at: https://science.nasa.gov/3d-resources/70-meter-dish/
 CubeSat – 1 RU Generic (NASA 3D Resources): Used as a 3D asset in our interactive scene. Model courtesy of NASA/JPL-Caltech, available at: https://science.nasa.gov/3d-resources/cubesat-1-ru-generic/
