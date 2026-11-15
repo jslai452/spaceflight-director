@@ -57,7 +57,7 @@ rotation = -0.00063579885
 script = ExtResource("4_6ad1t")
 PlayButton = NodePath("VBoxContainer/PlayButton")
 QuitButton = NodePath("VBoxContainer/QuitButton")
-CreditsButton = NodePath("VBoxContainer/CreditsButton")
+CreditsButton = NodePath("")
 TutorialsButton = NodePath("VBoxContainer/TutorialButton")
 
 [node name="VBoxContainer" type="VBoxContainer" parent="MainMenuScene" unique_id=89893596]
@@ -83,12 +83,6 @@ layout_mode = 2
 theme_override_fonts/font = ExtResource("5_6ad1t")
 theme_override_font_sizes/font_size = 43
 text = "Tutorials"
-
-[node name="CreditsButton" type="Button" parent="MainMenuScene/VBoxContainer" unique_id=924306048]
-layout_mode = 2
-theme_override_fonts/font = ExtResource("5_6ad1t")
-theme_override_font_sizes/font_size = 43
-text = "Credits"
 
 [node name="QuitButton" type="Button" parent="MainMenuScene/VBoxContainer" unique_id=2060367856]
 layout_mode = 2
