@@ -1,3 +1,5 @@
+
+
 Spaceflight Director (v0.2.0.0)
 
 
@@ -18,13 +20,13 @@ Spaceflight Director (v0.2.0.0)
 An immersive, physics-driven orbital mechanics, space science, and flight simulation built in Godot Engine for the **NASA Space Apps Challenge 2026**.
 
 
+Click here to download the pitch video:
+
+
+
+
 
 Take command of the space program: manage electric charge, execute precise orbital maneuvers, and conduct real-world experiments around the Earth.
-
-Pitch Video:
-<video src="SpaceflightPitchVideo.mp4" controls width="100%" autoplay muted loop></video>
-
-
 
 ## 🌟 Key Features
 
@@ -33,7 +35,9 @@ Pitch Video:
 ### 🌌 Authentic Physics & Orbital Mechanics
 
 **N-Body Gravity & Keplerian Orbits:** Accurate orbital state propagation, patched conics, and a custom real-time trajectory line renderer.
-**Tsiolkovsky Rocket Equation:** Grounded in fundamental aerospace mathematics for mass, fuel consumption, and delta-v constraints.
+**Tsiolkovsky Rocket Equation:** Grounded in fundamental aerospace mathematics for ma
+
+s, fuel consumption, and delta-v constraints.
 **Custom Time-Warp Engine:** Safely accelerate time up to thousands of times speed to skip long orbital transit phases without breaking physics calculations.
 
 
