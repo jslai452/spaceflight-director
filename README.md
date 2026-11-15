@@ -73,7 +73,7 @@ s, fuel consumption, and delta-v constraints.
 | **UI Dashboard** | Toggle SAS Autopilot Modes (Prograde / Retrograde) |
 
 | **Time Warp Keys** | Accelerate / Decelerate Simulation Speed |
-
+| **M**| Toggle Map View|
 
 
 ---
