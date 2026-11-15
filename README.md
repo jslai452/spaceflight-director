@@ -3,7 +3,7 @@ Spaceflight Director (v0.2.0.0)
 
 
 <p align="left">
-  [![License: Apache 2.0](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
+    <img src="https://img.shields.io/badge/License-Apache%202.0-blue.svg" alt="License: Apache 2.0">
 
   <img src="https://img.shields.io/badge/Engine-Godot_4.x_--_.NET-blue?logo=godotengine" alt="Godot Engine">
 
