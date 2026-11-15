@@ -21,6 +21,9 @@ An immersive, physics-driven orbital mechanics, space science, and flight simula
 
 Take command of the space program: manage electric charge, execute precise orbital maneuvers, and conduct real-world experiments around the Earth.
 
+Pitch Video:
+<video src="./SpaceflightPitchVideo" controls width="100%" autoplay muted loop></video>
+
 
 
 ---
