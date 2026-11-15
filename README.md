@@ -15,11 +15,11 @@ Spaceflight Director (v0.2.0.0)
 
 
 
-An immersive, physics-driven orbital mechanics, space science, and flight simulation built in Godot Engine for the **NASA International Space Apps Challenge**.
+An immersive, physics-driven orbital mechanics, space science, and flight simulation built in Godot Engine for the **NASA Space Apps Challenge 2026**.
 
 
 
-Take command of the space program: inspect your rocket during assembly, manage electric charge and solar arrays, execute precise orbital maneuvers, survive hypersonic atmospheric re-entry, and conduct real-world scientific magnetosphere experiments around the Earth and Moon.
+Take command of the space program: manage electric charge, execute precise orbital maneuvers, and conduct real-world experiments around the Earth.
 
 
 
@@ -40,18 +40,16 @@ Take command of the space program: inspect your rocket during assembly, manage e
 
 ### ☀️ Resource & Electric Charge Management
 
-**Solar Panels & Alignment Math:** Solar panels calculate power generation dynamically based on their angle relative to the Sun using **dot product vectors** ($A \cdot B$).
-**Power Drain & Systems:** SAS autopilot and onboard avionics consume electric charge. Facing away from the Sun or flying through planetary shadows drains batteries.
-
+**Power Drain & Systems:** SAS autopilot and onboard avionics consume electric charge.
 
 ## 🎮 Gameplay & Mission Loop
 
 
 
 **Ascent & Insertion:** Launch using custom SAS autopilot modes (**Prograde**, **Retrograde**) to reach stable orbit.
-2. **Orbital Operations:** Deploy solar arrays, monitor electric charge, and follow real-time trajectory lines.
+2. **Orbital Operations:** Monitor electric charge, and follow real-time trajectory lines.
 
-4. **Scientific Observation:** Collect telemetry data with the science instruments
+3. **Scientific Observation:** Collect telemetry data with the science instruments.
 
 
 
