@@ -21,7 +21,7 @@ An immersive, physics-driven orbital mechanics, space science, and flight simula
 
 
 Click here to download the pitch video:
-
+https://github.com/jslai452/spaceflight-director/blob/main/SpaceflightPitchVideo.mp4
 
 
 
