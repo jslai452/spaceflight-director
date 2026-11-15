@@ -26,10 +26,6 @@ Pitch Video:
 
 
 
----
-
-
-
 ## 🌟 Key Features
 
 
