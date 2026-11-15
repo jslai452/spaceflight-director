@@ -1,0 +1,49 @@
+[gd_scene format=3 uid="uid://b3aur3uk3cqx3"]
+
+[ext_resource type="Texture2D" uid="uid://caiaihcvfsvcm" path="res://assets/vfx/kenney-particle-pack-7e801dc538996622a91327bb1dd5879cf977aa09/addons/kenney_particle_pack/smoke_04.png" id="1_by1ht"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_7fvnm"]
+transparency = 1
+albedo_texture = ExtResource("1_by1ht")
+emission_enabled = true
+emission = Color(0.805899, 0.52622485, 0.20315525, 1)
+emission_energy_multiplier = 3.19
+billboard_mode = 1
+
+[sub_resource type="Gradient" id="Gradient_svl11"]
+offsets = PackedFloat32Array(0, 0.4869281, 0.96405226)
+colors = PackedColorArray(0, 0, 0, 0, 0.48039216, 0.48039216, 0.48039216, 1, 1, 1, 1, 1)
+
+[sub_resource type="GradientTexture1D" id="GradientTexture1D_4touq"]
+gradient = SubResource("Gradient_svl11")
+
+[sub_resource type="ParticleProcessMaterial" id="ParticleProcessMaterial_45cav"]
+emission_shape_scale = Vector3(0.2, 0.2, 0.2)
+emission_shape = 1
+emission_sphere_radius = 1.0
+gravity = Vector3(0, 2, 0)
+color_ramp = SubResource("GradientTexture1D_4touq")
+
+[sub_resource type="QuadMesh" id="QuadMesh_enfal"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_srqyl"]
+render_priority = -1
+transparency = 1
+albedo_color = Color(0.47866166, 0.47866172, 0.47866166, 1)
+albedo_texture = ExtResource("1_by1ht")
+emission = Color(0.805899, 0.52622485, 0.20315525, 1)
+emission_energy_multiplier = 3.19
+billboard_mode = 1
+
+[node name="fire_particles" type="Node3D" unique_id=1516892042]
+
+[node name="GPUParticles3D" type="GPUParticles3D" parent="." unique_id=1011117991]
+material_override = SubResource("StandardMaterial3D_7fvnm")
+speed_scale = 1.95
+process_material = SubResource("ParticleProcessMaterial_45cav")
+draw_pass_1 = SubResource("QuadMesh_enfal")
+
+[node name="GPUParticles3D2" type="GPUParticles3D" parent="." unique_id=1489631673]
+material_override = SubResource("StandardMaterial3D_srqyl")
+process_material = SubResource("ParticleProcessMaterial_45cav")
+draw_pass_1 = SubResource("QuadMesh_enfal")

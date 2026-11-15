@@ -1,0 +1,6 @@
+[gd_scene format=3 uid="uid://p7tw4ngx5hns"]
+
+[node name="LithiumIonBattery" type="Node3D" unique_id=2134051603]
+
+[node name="CSGBox3D" type="CSGBox3D" parent="." unique_id=253264882]
+size = Vector3(1, 1, 1.4892578)

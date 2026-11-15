@@ -1,0 +1,16 @@
+[gd_scene format=3 uid="uid://cqithvaouabag"]
+
+[ext_resource type="Script" uid="uid://bh2hebvuti0ja" path="res://scripts/Price.cs" id="1_wkv6b"]
+[ext_resource type="PackedScene" uid="uid://vp0a0q40mq5y" path="res://assets/models/SolarPanel.glb" id="2_8bugc"]
+[ext_resource type="Script" uid="uid://mem4omkk6j1m" path="res://scripts/AttachNode.cs" id="3_excq6"]
+
+[node name="SolarPanel" type="Node3D" unique_id=785124471]
+script = ExtResource("1_wkv6b")
+FundsNeeded = 10000000
+
+[node name="SolarPanel" parent="." unique_id=654200471 instance=ExtResource("2_8bugc")]
+
+[node name="Node3D" type="Node3D" parent="." unique_id=177220044]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 11.400001, 2)
+script = ExtResource("3_excq6")
+NodeTypeProperty = 2

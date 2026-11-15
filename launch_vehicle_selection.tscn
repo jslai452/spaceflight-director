@@ -1,0 +1,105 @@
+[gd_scene format=3 uid="uid://ddkfm72ocdm1w"]
+
+[ext_resource type="Texture2D" uid="uid://2gfbu4uy3po6" path="res://assets/images/Roman_Space_Telescope_Animation2_Still.jpg" id="1_kmukd"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_qivng"]
+atlas = ExtResource("1_kmukd")
+region = Rect2(-50, 0, 0, 0)
+
+[node name="LaunchVehicleSelection" type="Control" unique_id=1806770045]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="." unique_id=1486467081]
+layout_mode = 0
+offset_right = 810.0
+offset_bottom = 562.0
+
+[node name="Label" type="Label" parent="VBoxContainer" unique_id=890187773]
+layout_mode = 2
+text = "SELECT A LAUNCH VEHICLE: "
+
+[node name="HBoxContainer" type="HBoxContainer" parent="VBoxContainer" unique_id=795094548]
+layout_mode = 2
+theme_override_constants/separation = 30
+
+[node name="TextureButton" type="TextureButton" parent="VBoxContainer/HBoxContainer" unique_id=1908865895]
+custom_minimum_size = Vector2(250, 500)
+layout_mode = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="VBoxContainer/HBoxContainer/TextureButton" unique_id=747768311]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/separation = 10
+
+[node name="Label" type="Label" parent="VBoxContainer/HBoxContainer/TextureButton/VBoxContainer" unique_id=2006190072]
+layout_mode = 2
+text = "Booster Rocket"
+autowrap_mode = 2
+
+[node name="TextureRect" type="TextureRect" parent="VBoxContainer/HBoxContainer/TextureButton/VBoxContainer" unique_id=201242769]
+layout_mode = 2
+size_flags_vertical = 3
+texture = SubResource("AtlasTexture_qivng")
+expand_mode = 1
+stretch_mode = 6
+
+[node name="TextureButton2" type="TextureButton" parent="VBoxContainer/HBoxContainer" unique_id=1852778753]
+custom_minimum_size = Vector2(250, 500)
+layout_mode = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="VBoxContainer/HBoxContainer/TextureButton2" unique_id=755962593]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/separation = 10
+
+[node name="Label" type="Label" parent="VBoxContainer/HBoxContainer/TextureButton2/VBoxContainer" unique_id=1501938926]
+layout_mode = 2
+text = "Heavy Lifter"
+
+[node name="TextureRect" type="TextureRect" parent="VBoxContainer/HBoxContainer/TextureButton2/VBoxContainer" unique_id=158918570]
+layout_mode = 2
+size_flags_vertical = 3
+expand_mode = 1
+stretch_mode = 6
+
+[node name="TextureButton3" type="TextureButton" parent="VBoxContainer/HBoxContainer" unique_id=1434832134]
+custom_minimum_size = Vector2(250, 500)
+layout_mode = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="VBoxContainer/HBoxContainer/TextureButton3" unique_id=984325221]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/separation = 10
+
+[node name="Label" type="Label" parent="VBoxContainer/HBoxContainer/TextureButton3/VBoxContainer" unique_id=683789253]
+layout_mode = 2
+text = "Mission Select"
+
+[node name="TextureRect" type="TextureRect" parent="VBoxContainer/HBoxContainer/TextureButton3/VBoxContainer" unique_id=1555204947]
+layout_mode = 2
+size_flags_vertical = 3
+expand_mode = 1
+stretch_mode = 6
+
+[node name="Button" type="Button" parent="VBoxContainer" unique_id=848149382]
+layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 8
+text = "Back to Main Menu"

@@ -1,0 +1,10 @@
+[gd_scene format=3 uid="uid://bxsvsyablm25k"]
+
+[ext_resource type="PackedScene" uid="uid://b8sk78bb2xsn3" path="res://assets/models/Booster.glb" id="1_0sqrb"]
+[ext_resource type="Script" uid="uid://bh2hebvuti0ja" path="res://scripts/Price.cs" id="1_in0vy"]
+
+[node name="SolidRocketBooster" type="Node3D" unique_id=1988424733]
+script = ExtResource("1_in0vy")
+FundsNeeded = 168000000
+
+[node name="Booster" parent="." unique_id=801301257 instance=ExtResource("1_0sqrb")]

@@ -1,0 +1,44 @@
+[gd_scene format=3 uid="uid://badu38ctg8gmf"]
+
+[ext_resource type="Script" uid="uid://cyxcqqv2nnci0" path="res://scripts/SplashScreen.cs" id="1_hsxvm"]
+[ext_resource type="FontFile" uid="uid://cfl72ghhcd1jh" path="res://assets/fonts/exo2/Exo2-VariableFont_wght.ttf" id="2_4gp4q"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_aqg6t"]
+bg_color = Color(0.009317497, 0.009317502, 0.009317491, 1)
+
+[node name="SplashScreen" type="Control" unique_id=327208776]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_hsxvm")
+
+[node name="Panel" type="Panel" parent="." unique_id=1613623149]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_aqg6t")
+
+[node name="Label" type="Label" parent="Panel" unique_id=317661086]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -143.5
+offset_top = -10.0
+offset_right = 143.5
+offset_bottom = 10.0
+grow_horizontal = 2
+grow_vertical = 2
+rotation = 0.00028264432
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("2_4gp4q")
+theme_override_font_sizes/font_size = 25
+text = "Created for the NASA Space Apps Challenge"

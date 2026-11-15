@@ -1,0 +1,70 @@
+[gd_scene format=3 uid="uid://cwnsnvs8a2s7f"]
+
+[ext_resource type="FontFile" uid="uid://cfl72ghhcd1jh" path="res://assets/fonts/exo2/Exo2-VariableFont_wght.ttf" id="1_ox3s1"]
+
+[node name="MissionControlScienceUI" type="Control" unique_id=226513869]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="PanelContainer" type="PanelContainer" parent="." unique_id=227634186]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="PanelContainer" unique_id=286933281]
+layout_mode = 2
+
+[node name="Button2" type="Button" parent="PanelContainer/VBoxContainer" unique_id=1585697182]
+layout_mode = 2
+size_flags_horizontal = 0
+theme_override_fonts/font = ExtResource("1_ox3s1")
+text = "Return To Flight"
+
+[node name="PanelContainer" type="PanelContainer" parent="PanelContainer/VBoxContainer" unique_id=1376967478]
+layout_mode = 2
+size_flags_horizontal = 0
+
+[node name="VBoxContainer" type="VBoxContainer" parent="PanelContainer/VBoxContainer/PanelContainer" unique_id=1250555217]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="PanelContainer/VBoxContainer/PanelContainer/VBoxContainer" unique_id=530923390]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("1_ox3s1")
+text = "Connection Status: "
+
+[node name="Label2" type="Label" parent="PanelContainer/VBoxContainer/PanelContainer/VBoxContainer" unique_id=695470492]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("1_ox3s1")
+text = "CONNECTED(DSN Goldstone)"
+
+[node name="Label3" type="Label" parent="PanelContainer/VBoxContainer/PanelContainer/VBoxContainer" unique_id=2126943095]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("1_ox3s1")
+text = "SIGNAL STRENGTH: 100%"
+
+[node name="Label4" type="Label" parent="PanelContainer/VBoxContainer/PanelContainer/VBoxContainer" unique_id=1669795790]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("1_ox3s1")
+text = "TRANSMISSION SPEED: 10 MB/s"
+
+[node name="Label" type="Label" parent="PanelContainer/VBoxContainer" unique_id=1896551791]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("1_ox3s1")
+text = "Transmitted Data:"
+
+[node name="Button" type="Button" parent="PanelContainer/VBoxContainer" unique_id=1664645380]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("1_ox3s1")
+text = "MagnetometerBoom"
+
+[node name="VBoxContainer" type="VBoxContainer" parent="." unique_id=1684494400]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0

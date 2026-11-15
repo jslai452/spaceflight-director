@@ -1,0 +1,58 @@
+[gd_scene format=3 uid="uid://cw25bnlwv38bo"]
+
+[ext_resource type="FontFile" uid="uid://cfl72ghhcd1jh" path="res://assets/fonts/exo2/Exo2-VariableFont_wght.ttf" id="1_cguuv"]
+[ext_resource type="Script" uid="uid://o312efq63l2n" path="res://scripts/TutorialsListManager.cs" id="1_v2tct"]
+[ext_resource type="Script" uid="uid://c2ea807brvfxu" path="res://scripts/ExitMissionUI.cs" id="2_3drv8"]
+
+[node name="TutorialsList" type="Control" unique_id=150534296 node_paths=PackedStringArray("FlightTutorialButton")]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = 1.0
+offset_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_v2tct")
+FlightTutorialButton = NodePath("Panel/VBoxContainer/Button")
+
+[node name="Button2" type="Button" parent="." unique_id=905139568 node_paths=PackedStringArray("ExitToMainMenuButton")]
+z_index = 1
+layout_mode = 1
+anchors_preset = 2
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_top = -31.0
+offset_right = 242.0
+grow_vertical = 0
+text = "Exit
+"
+script = ExtResource("2_3drv8")
+ExitToMainMenuButton = NodePath(".")
+
+[node name="Panel" type="Panel" parent="." unique_id=1744654208]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Panel" unique_id=573715982]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -20.0
+offset_right = 20.0
+offset_bottom = 40.0
+grow_horizontal = 2
+
+[node name="Label" type="Label" parent="Panel/VBoxContainer" unique_id=837614488]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("1_cguuv")
+text = "Tutorials"
+
+[node name="Button" type="Button" parent="Panel/VBoxContainer" unique_id=750470688]
+layout_mode = 2
+text = "1: Launching Your First Rocket"

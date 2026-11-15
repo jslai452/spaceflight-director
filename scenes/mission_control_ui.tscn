@@ -1,0 +1,78 @@
+[gd_scene format=3 uid="uid://d3c1w107nfog6"]
+
+[ext_resource type="Script" uid="uid://g233ki6xcba1" path="res://scripts/MissionUIManager.cs" id="1_gj38n"]
+[ext_resource type="FontFile" uid="uid://cfl72ghhcd1jh" path="res://assets/fonts/exo2/Exo2-VariableFont_wght.ttf" id="2_n8aqt"]
+[ext_resource type="Script" uid="uid://bnbe6t7edatry" path="res://scripts/MissionObjectives.cs" id="3_yupt8"]
+[ext_resource type="Script" uid="uid://blhh87hqp1c44" path="res://scripts/Objective.cs" id="4_gj38n"]
+[ext_resource type="Script" uid="uid://br4iesjcp6vdl" path="res://scripts/MissionBudget.cs" id="6_n8aqt"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_enfal"]
+bg_color = Color(0, 0, 0, 1)
+
+[sub_resource type="Resource" id="Resource_gj38n"]
+script = ExtResource("4_gj38n")
+metadata/_custom_type_script = "uid://blhh87hqp1c44"
+
+[sub_resource type="Resource" id="Resource_n8aqt"]
+script = ExtResource("4_gj38n")
+ObjectiveName = "Record and Transmit Yeast Sample Data"
+ObjectiveFunction = "check_transmitted_yeast_sample"
+metadata/_custom_type_script = "uid://blhh87hqp1c44"
+
+[node name="MissionControlUI" type="Control" unique_id=1998894698 node_paths=PackedStringArray("vBoxContainer", "exitButton")]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_gj38n")
+vBoxContainer = NodePath("Panel/VBoxContainer/VBoxContainer")
+exitButton = NodePath("Button")
+
+[node name="Panel" type="Panel" parent="." unique_id=1124360169]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_enfal")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Panel" unique_id=1940070383]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Header" type="Label" parent="Panel/VBoxContainer" unique_id=1628149909]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("2_n8aqt")
+theme_override_font_sizes/font_size = 32
+text = "Mission Catalog"
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Panel/VBoxContainer" unique_id=1941239787]
+layout_mode = 2
+
+[node name="Button2" type="Button" parent="Panel/VBoxContainer/VBoxContainer" unique_id=398998643]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("2_n8aqt")
+text = "Launch CubeSat into Low Earth Orbit and Record and Transmit Data on Living Yeast Cells"
+
+[node name="MissionObjectives" type="Node" parent="Panel/VBoxContainer/VBoxContainer/Button2" unique_id=1206836878]
+script = ExtResource("3_yupt8")
+Objectives = Array[ExtResource("4_gj38n")]([SubResource("Resource_gj38n"), SubResource("Resource_n8aqt")])
+
+[node name="MissionBudget" type="Node" parent="Panel/VBoxContainer/VBoxContainer/Button2" unique_id=214354553]
+script = ExtResource("6_n8aqt")
+Budget = 50000000000000
+
+[node name="Button" type="Button" parent="." unique_id=763614281]
+layout_mode = 1
+anchors_preset = 2
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_top = -8.0
+offset_right = 8.0
+grow_vertical = 0
+theme_override_fonts/font = ExtResource("2_n8aqt")
+text = "Exit"

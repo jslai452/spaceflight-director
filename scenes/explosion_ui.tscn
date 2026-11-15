@@ -1,0 +1,32 @@
+[gd_scene format=3 uid="uid://ct6lytkt4ivqv"]
+
+[ext_resource type="Script" uid="uid://c6upng2eg5441" path="res://scripts/ExplosionUI.cs" id="1_tojx8"]
+
+[node name="ExplosionUI" type="Control" unique_id=872932403 node_paths=PackedStringArray("ExitToMainMenuButton")]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_tojx8")
+ExitToMainMenuButton = NodePath("PanelContainer/Button")
+
+[node name="PanelContainer" type="PanelContainer" parent="." unique_id=320038113]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Label" type="Label" parent="PanelContainer" unique_id=104815136]
+layout_mode = 2
+size_flags_horizontal = 4
+text = "Mission Failed"
+
+[node name="Button" type="Button" parent="PanelContainer" unique_id=116741214]
+layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 8
+text = "Exit To Main Menu"

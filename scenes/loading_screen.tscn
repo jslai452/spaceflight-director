@@ -1,0 +1,55 @@
+[gd_scene format=3 uid="uid://bc6cwxnk14s6k"]
+
+[ext_resource type="Script" uid="uid://d4iohsp0tnv6s" path="res://scripts/LoadingScreen.cs" id="1_ep5rh"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_aqg6t"]
+bg_color = Color(0.022979882, 0.022979887, 0.022979863, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_enfal"]
+bg_color = Color(0.5576002, 0.597287, 7.70092e-07, 1)
+
+[node name="LoadingScreen" type="Control" unique_id=636828435 node_paths=PackedStringArray("ProgressBar", "StatusLabel", "TipLabel")]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_ep5rh")
+ProgressBar = NodePath("VBoxContainer/ProgressBar")
+StatusLabel = NodePath("VBoxContainer/StatusLabel")
+TipLabel = NodePath("VBoxContainer/TipLabel")
+
+[node name="Panel" type="Panel" parent="." unique_id=960879049]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_aqg6t")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="." unique_id=935510651]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -20.0
+offset_top = -40.0
+offset_right = 20.0
+grow_horizontal = 2
+grow_vertical = 0
+
+[node name="StatusLabel" type="Label" parent="VBoxContainer" unique_id=403920154]
+layout_mode = 2
+text = "StatusLabel"
+
+[node name="TipLabel" type="Label" parent="VBoxContainer" unique_id=1085992146]
+layout_mode = 2
+
+[node name="ProgressBar" type="ProgressBar" parent="VBoxContainer" unique_id=620576884]
+custom_minimum_size = Vector2(450, 0)
+layout_mode = 2
+theme_override_styles/fill = SubResource("StyleBoxFlat_enfal")

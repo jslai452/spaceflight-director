@@ -1,0 +1,40 @@
+[gd_scene format=3 uid="uid://dm17dgonc4vdp"]
+
+[ext_resource type="AudioStream" uid="uid://cuv6jn2xfres3" path="res://assets/audios/446111__justinvoke__success-jingle.wav" id="1_jp6x8"]
+
+[node name="TutorialUI" type="Control" unique_id=1768564460]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="PanelContainer" type="PanelContainer" parent="." unique_id=1905579223]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -20.0
+offset_top = -40.0
+offset_right = 20.0
+grow_horizontal = 2
+grow_vertical = 0
+
+[node name="VBoxContainer" type="VBoxContainer" parent="PanelContainer" unique_id=2083885485]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="PanelContainer/VBoxContainer" unique_id=1164384537]
+layout_mode = 2
+text = "InstructionLabel"
+
+[node name="Button" type="Button" parent="PanelContainer/VBoxContainer" unique_id=343482055]
+layout_mode = 2
+size_flags_horizontal = 8
+size_flags_vertical = 8
+text = "Okay"
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="." unique_id=1362545813]
+stream = ExtResource("1_jp6x8")
