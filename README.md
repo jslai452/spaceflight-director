@@ -84,7 +84,7 @@ Take command of the space program: manage electric charge, execute precise orbit
 
 **Engine:** [Godot Engine 4.x (.NET Edition)](https://godotengine.org/)
 **Programming Language:** C# (.NET 8.0)
-**Physics Architecture:** Procedural numerical physics integration, vector dot product mechanics, and inverse-cube gravitational/magnetic solvers (100% self-contained for offline performance).
+**Physics Architecture:** Procedural numerical physics integration (100% self-contained for offline performance).
 **Target Platform:** Windows Executable (`.exe`) 
 
 Credits:
