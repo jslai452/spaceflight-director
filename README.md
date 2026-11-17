@@ -71,6 +71,9 @@ Take command of the space program: manage electric charge, execute precise orbit
 | **UI Dashboard** | Toggle SAS Autopilot Modes (Prograde / Retrograde) |
 
 | **Time Warp Keys** | Accelerate / Decelerate Simulation Speed |
+
+| **T** | Toggle SAS Autopilot |
+
 | **M**| Toggle Map View|
 
 
